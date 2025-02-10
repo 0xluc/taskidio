@@ -6,16 +6,16 @@
     "analytics": false
   },
   "projects": {
-    "taskdio": {
+    "taskidio": {
       "projectType": "application",
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/taskdio",
+            "outputPath": "dist/taskidio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -47,16 +47,16 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "options": {
             "port": 1420
           },
           "configurations": {
             "production": {
-              "buildTarget": "taskdio:build:production"
+              "buildTarget": "taskidio:build:production"
             },
             "development": {
-              "buildTarget": "taskdio:build:development"
+              "buildTarget": "taskidio:build:development"
             }
           },
           "defaultConfiguration": "development"
