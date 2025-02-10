@@ -31,11 +31,13 @@ yarn-error.log
 # Miscellaneous
 /.angular/cache
 .sass-cache/
-/connect.lock
 /coverage
 /libpeerconnection.log
 testem.log
 /typings
+*.lock
+package-lock.json
+
 
 # System files
 .DS_Store
