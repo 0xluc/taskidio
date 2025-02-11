@@ -1,11 +1,12 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterOutlet } from "@angular/router";
-import { invoke } from "@tauri-apps/api/core";
+import { ButtonModule } from "primeng/button";
+import { TabsComponent } from "./tabs/tabs.component";
 
 @Component({
     selector: "app-root",
-    imports: [CommonModule, RouterOutlet],
+    imports: [CommonModule, RouterOutlet, ButtonModule, TabsComponent],
     templateUrl: "./app.component.html",
     styleUrl: "./app.component.css",
 })
